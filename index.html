@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>Title</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+<div class="wrapper">
+    <div class="title-block">
+        <h1>Радио-реклама для Вас</h1>
+    </div>
+    <div class="create-adv">
+        <div class="create-adv__container">
+            <div class="create-adv__block">
+                <div class="adv-params">
+                    <div class="adv-params__city">
+                        <div class="adv-params__title">
+                            <h4>Выберите Город</h4>
+                        </div>
+                        <div class="adv-params__select">
+                            <select name="city" id="city">
+                                <option value="">Санкт-Петербург</option>
+                                <option value="">Москва</option>
+                                <option value="">Краснодар</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="adv-params__audience">
+                        <div class="adv-params__title">
+                            <h4>Целевая аудитория</h4>
+                        </div>
+                        <div data-id="sex" class="adv-params__select">
+                            <select name="sex" id="sex">
+                                <option value="" selected>Любой</option>
+                                <option value="">Женский</option>
+                                <option value="">Мужской</option>
+                            </select>
+                        </div>
+                        <div class="adv-params__select">
+                            <select name="age" id="age">
+                            <option value="">20-30 лет</option>
+                            <option value="">30-40 лет</option>
+                            <option value="">40-50 лет</option>
+                        </select></div>
+                        <div class="adv-params__select">
+                            <select name="income" id="income">
+                                <option value="">Низкий</option>
+                                <option value="">Средний</option>
+                                <option value="">Высокий</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="create-adv__block">
+                <div class="adv-params">
+                    <div class="adv-params__title">
+                        <h4>Радиостанции / Характеристики ролика</h4>
+                    </div>
+                    <div class="adv-params__broadcast">
+                        <div class="stations">
+                            <ul class="stations-list">
+                                <li><a data-href="" class="active">Авто радио</a></li>
+                                <li><a data-href="">Юмор ФМ</a></li>
+                                <li><a data-href="">Эхо Петербурга</a></li>
+                                <li><a data-href="">Радио Energy</a></li>
+                                <li><a data-href="">Детское радио</a></li>
+                                <li><a data-href="">Comedy радио</a></li>
+                                <li><a data-href="" class="disabled">Радио Зенит</a></li>
+                                <li><a data-href="" class="disabled">101 онлайн радио</a></li>
+                            </ul>
+                        </div>
+                        <div class="params">
+                            <div class="params__list-mobile"><a class="params__list-link">Выбрать станцию</a></div>
+                            <div class="params__date">
+                                Размещение ролика с <span id="from">15.02.18</span> по <span id="to">15.03.18</span>
+                                <a id="calendar" class="calendar">
+                                    <img src="./img/calendar-icon.png" alt="">
+                                </a>
+                            </div>
+                            <div class="params__time">
+                                <label for="time">Длительность ролика:</label>
+                                <div class="range-block">
+                                    <p>~ <span>20</span> сек</p>
+                                    <input id="time" name="time" type="range" min="10" max="60" step="5" value="20">
+                                </div>
+                            </div>
+                            <div class="params__count">
+                                <label for="count">Количество роликов в день:</label>
+                                <div class="range-block">
+                                    <p><span>15</span></p>
+                                    <input id="count" name="count" type="range" min="1" max="100" step="1" value="15">
+                                </div>
+                            </div>
+                            <div class="params__checkbox">
+                                <label>
+                                    <span class="checked"></span>
+                                    <input type="checkbox" name="general" checked>
+                                </label>
+                                <div class="info-block">
+                                    <div class="info-block__title">
+                                        <h6>Пакет Генерального спонсора</h6>
+                                    </div>
+                                    <p>Даёт возможность выступить Генеральным спонсором на радиостанциях.</p>
+                                </div>
+                            </div>
+                            <div class="params__checkbox">
+                                <label>
+                                    <span></span>
+                                    <input type="checkbox" name="packed">
+                                </label>
+                                <div class="info-block">
+                                    <div class="info-block__title">
+                                        <h6>Пакетное предложение</h6>
+                                    </div>
+                                    <p>Размещение ролика сразу на нескольких радиостанциях.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="result">
+                            <div class="result__content">
+                                <p>Стоимость размещения:
+                                    <span>~ 9999 р.</span></p>
+                                <a href="#" class="btn add-btn">Добавить</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="chosen-adv">
+        <div class="chosen-adv__container">
+            <div class="chosen-adv__title">
+                <h4>Санкт-Петербург</h4>
+            </div>
+            <div class="adv-block">
+                <div class="adv-block__info">
+                    <div class="adv-block__name">
+                        <h6>Юмор ФМ</h6>
+                    </div>
+                    <div class="adv-block__data">
+                        <p>Ролик 20 сек. В период с 15.02.18 по 15.03.18. </p>
+                    </div>
+                    <div class="adv-block__price">
+                        <p>Cтоимость <span>~9,999 р.</span></p>
+                    </div>
+                    <div class="adv-block__edit">
+                        <a href="#" class="edit"><img src="./img/pen-icon.png" alt=""><span>Редактировать</span></a>
+                    </div>
+                </div>
+                <div class="adv-block__remove">
+                    <a href="#"><img src="./img/close-icon.png" alt=""></a>
+                </div>
+            </div>
+            <div class="adv-block">
+                <div class="adv-block__info">
+                    <div class="adv-block__name">
+                        <h6>Юмор ФМ</h6>
+                    </div>
+                    <div class="adv-block__data">
+                        <p>Ролик 20 сек. В период с 15.02.18 по 15.03.18. </p>
+                    </div>
+                    <div class="adv-block__price">
+                        <p>Cтоимость <span>~9,999 р.</span></p>
+                    </div>
+                    <div class="adv-block__edit">
+                        <a href="#" class="edit"><img src="./img/pen-icon.png" alt=""><span>Редактировать</span></a>
+                    </div>
+                </div>
+                <div class="adv-block__remove">
+                    <a href="#"><img src="./img/close-icon.png" alt=""></a>
+                </div>
+            </div>
+        </div>
+        <div class="chosen-adv__container">
+            <div class="chosen-adv__title">
+                <h4>Москва</h4>
+            </div>
+            <div class="adv-block">
+                <div class="adv-block__info">
+                    <div class="adv-block__name">
+                        <h6>Юмор ФМ</h6>
+                    </div>
+                    <div class="adv-block__data">
+                        <p>Ролик 20 сек. В период с 15.02.18 по 15.03.18. </p>
+                    </div>
+                    <div class="adv-block__price">
+                        <p>Cтоимость <span>~9,999 р.</span></p>
+                    </div>
+                    <div class="adv-block__edit">
+                        <a href="#" class="edit"><img src="./img/pen-icon.png" alt=""><span>Редактировать</span></a>
+                    </div>
+                </div>
+                <div class="adv-block__remove">
+                    <a href="#"><img src="./img/close-icon.png" alt=""></a>
+                </div>
+            </div>
+        </div>
+        <div class="chosen-adv__total">
+            <p>Общая стоимость рекламы <span>~99,999 р.</span></p>
+            <div class="total-btn">
+                <a href="#" class="btn calc-btn">Отправить расчет</a>
+            </div>
+            <div class="total-notes">
+                <p>Мы перезвоним Вам для уточнения параметров размещения ролика в рекламной сетке<br/>
+                    Мы предоставим Вам дополнительные скидки в зависимости от объёма рекламной компании и пакетного размещения
+                    Мы предоставим Вам эксклюзивную скидку от нашей компании</p>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="./js/all.min.js"></script>
+</body>
+</html>
